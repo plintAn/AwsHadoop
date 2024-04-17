@@ -8,13 +8,12 @@
 |----------------------|-------------------|---------------------|----------------|
 | - HDFS               | - EC2              | - Oracle            | - Python       |
 | - YARN               | - S3               | - PostgreSQL        | - SQL(Ansi)    |
-| - Spark              | - Lambda           | - DBeaver           |                |
-| - HiveDB             | - Glue Studio      |                     |                |
+| - Spark              | - Glue Studio      | - DBeaver           |                |
+| - HiveDB             | - RDS(Mysql)       | - Mysql             |                |
 | - Sqoop              | - EMR Cluster      |                     |                |
 |                      | - MWAA(Airflow)    |                     |                |
 |                      | - Athena           |                     |                |
-|                      | - SageMaker        |                     |                |
-|                      | - IAM              |                     |                |
+
 
 ### 변경 사항
 
