@@ -18,13 +18,15 @@
 ### 변경 사항
 
 - Hadoop Cluster => AWS EMR Cluster로 변경
-- Spark 및 MapReduce 환경도 EMR Cluster로 이관
-- Python 코드 추가
+ㄴSpark 및 MapReduce 환경도 EMR Cluster로 이관
+- Oozie => MWAA(Air Flow for aws)
+- Hive Query => Athena Query
+- Oracle DB => S3
 
 ### 클라우드 활용 빅데이터 처리 프로세스
 
 1. **데이터 복제 및 이동**
-   - DPCC(원천DB)는 매일 00:00~00:10 복제되어 Bcv(BPBB)라는 원천 복제 DB를 생성한다.
+   - DPCC(원천DB)는 매일 특정 시간에 복제되어 Bcv(BPBB)라는 원천 복제 DB를 생성한다.
    - BCV(Oracle DB) 데이터를 Sqoop을 통해 HDFS(HiveDB)로 이동한다.
      - 파일 데이터는 Block 단위로 분할되며, Hadoop Cluster 저장된 데이터는 Yarn에 의해 분산 저장된다.
 
